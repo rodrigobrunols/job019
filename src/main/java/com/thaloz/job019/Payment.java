@@ -48,4 +48,9 @@ public class Payment {
     public void setStatus(PaymentStatusEnum status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "Payment{" + "id='" + id + '\'' + ", amount=" + amount + ", currency='" + currency + '\'' + ", status=" + status + '}';
+    }
 }
